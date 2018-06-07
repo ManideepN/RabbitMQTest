@@ -10,8 +10,8 @@ public class RabbitMQReceiver {
 	
 	
 	@RabbitListener(queues = "javainuse.queue")
-    public void processOrder(Employee employee) {
-        System.out.println(" Received: "+employee);
+    public void processOrder(Employee emp) {
+        System.out.println(" Received: "+emp);
     }
 
 }
